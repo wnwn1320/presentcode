@@ -1,0 +1,241 @@
+@charset "utf-8";
+@import url(./reset.css);
+
+#wrap {
+    width: 1760px;
+    margin: 0 auto;
+}
+.banner-wrap {
+    text-align: center;
+}
+.banner-wrap h1{
+    font-size: 40px;
+    margin-left: -170px;
+}
+.main-banner img{
+    filter: blur(2.5px);
+    width: 1900px;
+    /* margin: 0 auto; */
+    height: 400px;
+    transform: translate(-5.2%);
+    position: relative;
+}
+.banner-wrap h1 {
+    position: absolute;
+    top: 150px;
+    transform: translate(185%);
+    text-align: center;
+    color: #fff;
+}
+
+.his-character {
+    padding-bottom: 50px;
+    background: #ddd;
+    text-align: center;
+}
+.his-character h1 {
+    margin-top: 80px;
+    padding-top: 40px;
+}
+.his-personality ul {
+    font-size: 0;
+    width: 900px;
+    margin: 0 auto;
+    display: inline-block;
+    background: #eee;
+    margin-top: 80px;
+    padding: 50px;
+}
+.his-personality ul li {
+    font-size: 16px;
+    display: inline-block;
+    width: 33.3333%;
+    height: 300px;
+    line-height: 450px;
+    margin-left: 60px;
+    font-size: 20px;
+}
+.his-personality ul li.sweet {
+    background: url(../img/hearts.png) no-repeat center/cover;
+    margin-top: 50px;
+    width: 180px;
+    height: 180px;
+    position: relative;
+}
+.his-personality ul li.elite {
+    background: url(../img/elite.png) no-repeat center/cover;
+    margin-top: 50px;
+    width: 180px;
+    height: 180px;
+    position: relative;
+}
+.his-personality ul li.sensitive {
+    background: url(../img/mind.png) no-repeat center/cover;
+    margin-top: 50px;
+    width: 180px;
+    height: 180px;
+    position: relative;
+}
+
+.sweet:before {
+    position: absolute;
+    content:"";
+    margin-top: 250px;
+    width: 190px;
+    height: 5px;
+    transform: translate(-24.3%);
+    background: linear-gradient( to right, rgb(247, 5, 5), #ffa061);
+    width: 0%;
+    transition: all 1s;
+    cursor: pointer;
+}
+.sweet:hover:before {
+    width: 80%;
+    
+}
+.elite:before {
+    position: absolute;
+    content:"";
+    margin-top: 250px;
+    width: 190px;
+    height: 5px;
+    transform: translate(-24.3%);
+    background: linear-gradient( to right, rgb(247, 5, 5), #ffa061);
+    width: 0%;
+    transition: all 1s;
+    cursor: pointer;
+}
+.elite:hover:before {
+    width: 80%;
+}
+.sensitive:before {
+    position: absolute;
+    content:"";
+    margin-top: 250px;
+    width: 190px;
+    height: 5px;
+    transform: translate(-24.3%);
+    background: linear-gradient( to right, rgb(247, 5, 5), #ffa061);
+    width: 0%;
+    transition: all 1s;
+    cursor: pointer;
+}
+.sensitive:hover:before {
+    width: 80%;
+}
+.letter {
+    text-align: center;
+    margin-top: 50px;
+}
+.for-you {
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+.first-present {
+    padding-top: 50px;
+    text-align: center;
+}
+.first-present h1 {
+    font-weight: normal;
+}
+.first-present img {
+    width: 300px;
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-bottom: 50px;
+}
+
+/* slider Item */
+.sliderItem h2 {
+    margin: 30px 0px 30px 0px;
+    font-weight: normal;
+    font-size: 20px;
+}
+.sliderItem .sliderDescription {}
+.sliderItem .sliderDescription h4 {
+    margin-bottom: 30px;
+}
+.sliderItem .sliderDescription p{
+    display: inline-block;
+    text-align: left;
+    /* margin-left: 500px; */
+}
+/* slider event */
+input[id=tab1]:checked ~ .sliderView .sliderList {
+    left: 0;
+}
+input[id=tab2]:checked ~ .sliderView .sliderList {
+    left: -435px;
+}
+input[id=tab3]:checked ~ .sliderView .sliderList {
+    left: -875px;
+}
+input[id=tab4]:checked ~ .sliderView .sliderList {
+    left: -1315px;
+}
+input[id=tab5]:checked ~ .sliderView .sliderList {
+    left: -1750px;
+}
+input[id=tab6]:checked ~ .sliderView .sliderList {
+    left: -2185px;
+}
+input[id=tab7]:checked ~ .sliderView .sliderList {
+    left: -2620px;
+}
+input[id=tab8]:checked ~ .sliderView .sliderList {
+    left: -3055px;
+}
+input[id=tab9]:checked ~ .sliderView .sliderList {
+    left: -3490px;
+}
+input[id=tab10]:checked ~ .sliderView .sliderList {
+    left: -3925px;
+}
+input[id=tab11]:checked ~ .sliderView .sliderList {
+    left: -4360px;
+}
+
+/* slider container */
+.sliderContainer {
+    height: 100%;
+    margin-top: 30px;
+}
+.sliderContainer input[name=tab] {
+    display: none;
+}
+
+/* slider View */
+.sliderView {
+    width: 430px;
+    height: 400px;
+    overflow: hidden;
+    margin-left: 650px;
+}
+.sliderList {
+    position: relative;
+    width: 4800px;
+    height: 100%;
+    transition: all 300ms;
+}
+.sliderItem {
+    display: inline-block;
+    width: 430px;
+    height: 400px;
+    background: #fff;
+    text-align: center;
+}
+.tabBtnBox {
+    bottom:6px;
+    height: 30px;
+    width: 1900px;
+    transform: translate(-4%, 30%);
+    margin-bottom: 30px;
+}
+.tabBtnBox label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #333;
+    cursor: pointer;
+    border-radius: 50%;
+}
